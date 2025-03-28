@@ -1,5 +1,10 @@
 const { DataTypes } = require("sequelize");
 const db = require('../ConnectionDb/db');
+const sincronizadaDb = require("./SicronizaDb");
+
+
+sincronizadaDb();
+
 
 const Receita = db.define('Receita', {
     id: {
