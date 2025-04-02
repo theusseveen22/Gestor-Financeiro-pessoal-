@@ -1,4 +1,4 @@
-const db = require('../ConnectionDb/db');
+const db = require('./db');
 
 async function sincronizarBanco() {
   try {

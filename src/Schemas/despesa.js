@@ -1,11 +1,7 @@
 const db = require('../ConnectionDb/db');
 const { DataTypes } = require("sequelize");
-const sincronizadaDb = require("./SicronizaDb");
 
-
-sincronizadaDb();
-
-const Despesa = db.define('Despesa', {
+const Despesa = db.define('Despesa', db.sync(), {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
