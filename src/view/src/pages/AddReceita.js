@@ -1,5 +1,13 @@
+import Header from "../components/Header";
+
 const addReceita = () => {
-    return <h1>Adicionar Receita</h1>
+    return (
+        <div>
+            <Header />
+            <h1>Adicionar Receita</h1>
+        </div>
+        
+    )
 }
 
 export default addReceita;

@@ -1,5 +1,13 @@
+import Header from "../components/Header";
+
 const addDespesa = () => {
-    return <h1>Adicionar Despesa</h1>
+    return (
+    <div>
+        <Header />
+        <h1>Adicionar Despesa</h1>
+    </div>
+    
+)
 }
 
 export default addDespesa;
